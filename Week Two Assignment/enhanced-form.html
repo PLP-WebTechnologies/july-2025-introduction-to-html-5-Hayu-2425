@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Advanced Content and Form</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to the HTML5</h1>
+        <p>This page demonstrates advanced content elements and an HTML5 form with built-in validation.</p>
+    </header>
+
+    <section>
+        <h2>1. Organizing Content with Lists</h2>
+        <h3>Top 5 Coding Languages in 2025</h3>
+        <ol>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>TypeScript</li>
+            <li>C#</li>
+        </ol>
+
+        <h3>Web Development Skills Checklist</h3>
+        <ul>
+            <li>HTML & Semantic Structure</li>
+            <li>CSS Styling</li>
+            <li>Responsive Design</li>
+            <li>Form Validation</li>
+            <li>Accessibility Features</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>2. Presenting Data with Tables</h2>
+        <table>
+            <caption>Monthly Visitors Report</caption>
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Unique Visitors</th>
+                    <th>Page Views</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>June</td>
+                    <td>12,000</td>
+                    <td>25,070</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>14,220</td>
+                    <td>52,800</td>
+                </tr>
+                <tr>
+                    <td>August</td>
+                    <td>15,890</td>
+                    <td>58,300</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>3. Embedding Media Content</h2>
+        <h3>Company Introduction Video</h3>
+        <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            Your browser does not support the video tag.
+        </iframe>
+
+        <h3>Click on the play button to play a sound:</h3>
+
+        <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Company Logo</h3>
+        <img src="logo.png" alt="Company Logo" width="200">
+    </section>
+
+    <section>
+        <h2>4. User Feedback Form</h2>
+        <form action="#" method="post" novalidate>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required minlength="3" placeholder="Enter Full Name"
+                    autocomplete="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter Your Email"
+                    autocomplete="email">
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Feedback Details</legend>
+                <label for="experience">How was your experience?</label>
+                <select id="experience" name="experience" required>
+                    <option value="">-- Select --</option>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="poor">Poor</option>
+                </select>
+
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="5" placeholder="Your message..."></textarea>
+
+                <label>
+                    <input type="checkbox" name="subscribe" value="yes" checked>
+                    Subscribe to newsletter
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Confirmation</legend>
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the terms and conditions
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hau IT Solution</p>
+    </footer>
+
+</body>
+
+</html>
