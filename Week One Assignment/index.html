@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro to HTML5 | Learn Semantic Web Design</title>
+  <meta name="description" content="Learn the fundamentals of HTML5.">
+  <meta name="keywords" content="HTML5, semantic HTML, accessibility, SEO, and development. ">
+  <meta name="author" content="Hayat Ahmed">
+</head>
+
+<body>
+
+  <header>
+    <h1>Web Development Week One Assignment</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#structure">Page Structure</a></li>
+        <li><a href="#accessibility">Accessibility</a></li>
+        <li><a href="#seo">SEO Basics</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="overview" aria-labelledby="overview-heading">
+      <h2 id="overview-heading">Overview</h2>
+      <p>HTML5 introduces meaningful structure to web documents. It promotes clarity for both human readers and search
+        engines, laying the foundation for accessible and discoverable content.</p>
+    </section>
+
+    <section id="benefits" aria-labelledby="benefits-heading">
+      <h2 id="benefits-heading">Why Use Semantic HTML?</h2>
+      <article>
+        <h3>Improves Accessibility</h3>
+        <p>Screen readers can better understand and navigate your content when it's structured using semantic elements
+          like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code>.</p>
+      </article>
+      <article>
+        <h3>Enhances SEO</h3>
+        <p>Search engines rely on semantic HTML to understand page layout and relevance. Proper use of headings and
+          sectioning helps with ranking.</p>
+      </article>
+      <article>
+        <h3>Makes Code More Readable</h3>
+        <p>Developers can quickly understand a page’s structure, making collaboration and maintenance easier.</p>
+      </article>
+    </section>
+
+    <section id="structure" aria-labelledby="structure-heading">
+      <h2 id="structure-heading">Basic Page Structure</h2>
+      <p>A well-structured HTML5 document includes elements such as:</p>
+      <ul>
+        <li><strong>&lt;header&gt;</strong> – Contains the site title or logo and navigation</li>
+        <li><strong>&lt;main&gt;</strong> – The main content area of the page</li>
+        <li><strong>&lt;section&gt;</strong> – Thematic grouping of content</li>
+        <li><strong>&lt;article&gt;</strong> – Independent, reusable content blocks</li>
+        <li><strong>&lt;footer&gt;</strong> – Copyright and contact info</li>
+      </ul>
+    </section>
+
+    <section id="accessibility" aria-labelledby="accessibility-heading">
+      <h2 id="accessibility-heading">Accessibility Considerations</h2>
+      <p>Semantic HTML supports assistive technologies through landmarks and labels. Using <code>aria-label</code> and
+        <code>aria-labelledby</code> helps define navigation and content regions more clearly.</p>
+    </section>
+
+    <section id="seo" aria-labelledby="seo-heading">
+      <h2 id="seo-heading">SEO Best Practices</h2>
+      <p>To improve search engine rankings:</p>
+      <ul>
+        <li>Use one <code>&lt;h1&gt;</code> for the page title</li>
+        <li>Follow logical heading order: <code>h2</code> for sections, <code>h3</code> for subtopics</li>
+        <li>Include a descriptive <code>&lt;title&gt;</code> and <code>&lt;meta name="description"&gt;</code></li>
+        <li>Ensure all content is relevant and well-structured</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hau IT Solution.</p>
+  </footer>
+
+</body>
+
+</html>
